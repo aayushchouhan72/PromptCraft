@@ -3,8 +3,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { TOPICS, TOPIC_CONTENT } from "../data/topics";
 import SectionRenderer from "../components/SectionRenderer";
 import useFeatureStore from "../store/useFeatureStore";
-import AskQuestionBox from "../components/AskQuestionBox";
-import SummaryBox from "../components/SummaryBox";
+import AskQuestionBox from "../components/Features/AskQuestionBox";
+import SummaryBox from "../components/Features/SummaryBox";
 
 const badgeStyles = {
   amber: "badge-amber",
@@ -48,7 +48,7 @@ export default function TopicPage({ markVisited }) {
   };
 
   const handleAskAiQuestions = async (sections) => {
-    setAskingQuestions(true);
+    setAskingQuestions(!askingQuestions);
     useFeatureStore.setState({ selectedTopic: sections });
   };
 

@@ -60,7 +60,7 @@ export default function Footer() {
             Chouhan
           </p>
           <p className="text-[11px] text-paper/20 font-mono">
-            Contact aayushchouhan@gmail.com
+            Contact aayushchouhanxyz27@gmail.com
           </p>
         </div>
       </div>
