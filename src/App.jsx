@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Sidebar from './components/Sidebar'
-import TopBar from './components/TopBar'
-import Footer from './components/Footer'
-import HomePage from './pages/HomePage'
-import TopicPage from './pages/TopicPage'
-import { useProgress } from './hooks/useProgress'
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import TopBar from "./components/TopBar";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import TopicPage from "./pages/TopicPage";
+import { useProgress } from "./hooks/useProgress";
 
 function Layout({ children, visited, sidebarOpen, setSidebarOpen }) {
   return (
@@ -27,15 +27,15 @@ function Layout({ children, visited, sidebarOpen, setSidebarOpen }) {
         </main>
       </div>
     </div>
-  )
+  );
 }
 
 export default function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(false)
-  const { visited, markVisited } = useProgress()
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const { visited, markVisited } = useProgress();
 
   return (
-    <BrowserRouter basename="/prompt-engineering-platform">
+    <BrowserRouter basename="/">
       <div className="noise-overlay" />
       <Layout
         visited={visited}
@@ -51,5 +51,5 @@ export default function App() {
         </Routes>
       </Layout>
     </BrowserRouter>
-  )
+  );
 }
