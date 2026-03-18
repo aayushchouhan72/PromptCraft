@@ -1,6 +1,4 @@
-Here is a comprehensive `README.md` file for the **PromptCraft** project, based on the provided source code and documentation.
 
----
 
 # PromptCraft — Prompt Engineering Learning Platform
 

@@ -29,15 +29,15 @@ to get better responses from AI models.
   };
 
   return (
-    <div className="flex flex-col bg-cyan-400 h-full my-5">
+    <div className="flex flex-col bg-black-400 h-full my-5">
       <div className="flex-1 overflow-y-auto p-4 space-y-2">
         {messages.map((msg, i) => (
           <div
             key={i}
             className={`p-3 rounded max-w-[70%] ${
               msg.role === "user"
-                ? "ml-auto bg-blue-500 text-white"
-                : "bg-white-400 text-black"
+                ? "ml-auto bg-blue-400 text-black"
+                : "bg-blue-200 text-black"
             }`}
           >
             {msg.text}
